@@ -17,5 +17,12 @@ public:
 
 private:
     Ui::Widget *ui;
+
+signals:
+    void sig_textChanged(QString str);
+
+private slots:
+    void slot_valueChanged(int val);
+    void slot_textChanged(QString str);
 };
 #endif // WIDGET_H
